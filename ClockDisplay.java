@@ -64,7 +64,7 @@ public class ClockDisplay
     seconds.increment();
     if(seconds.getValue() == 0)
       minutes.increment();
-    if (minutes.getValue() == 0 && seconds.getValue() == 00) // minutes just rolled over
+    if (minutes.getValue() == 0 && seconds.getValue() == 0) // minutes just rolled over
         hours.increment();
     setTimeString();
   }  // end of minIncrement()
